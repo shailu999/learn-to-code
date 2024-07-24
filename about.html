@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Learn to Code Online</title>
+    <link rel="stylesheet" href="learn-to-code.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #343a40; /* Dark background color */
+            color: #fff;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #5a6268; /* Darker background on hover */
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #343a40; /* Dark color for headings */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #007bff; /* Blue border around image */
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            margin-bottom: 20px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0;
+            color: #007bff; /* Blue color for name */
+        }
+
+        .team-member p {
+            color: #777; /* Lighter color for role and description */
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40; /* Dark background color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .team-member img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>About Us</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#lessons">Lessons</a>
+                <a href="#about" class="active">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Our Story</h2>
+            <p>Welcome to Learn to Code Online! We are passionate about helping you learn programming.</p>
+            <p>Our mission is to provide high-quality resources and lessons to beginners and advanced learners alike.</p>
+        </section>
+        <section class="container">
+            <h2>Meet the Team</h2>
+            <div class="team-member">
+                <img src="team-member-1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Founder & CEO</p>
+                <p>John is an experienced developer with a passion for teaching.</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member-2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Lead Instructor</p>
+                <p>Jane has years of experience in web development and loves helping others learn.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Learn to Code Online. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
