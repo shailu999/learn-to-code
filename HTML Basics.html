@@ -3,11 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Basics</title>
+    <title>HTML Basics - Learn Web Development</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+
+    background: url('bgimage3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+
+        }
+        header {
+ background: url('bgimage3.jpg') no-repeat center center fixed;
+    background-size: cover;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+       
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color:white;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0 0 15px;
+            line-height: 1.6;
+          color:white;
+}
+        code {
+            background: #f4f4f4;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #d63384;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            border: 1px solid #ddd;
+            color: #343a40;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color:black;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #e0f2f1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+                border-bottom: 1px solid #575757;
+            }
+            nav a:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
 </head>
 <body>
- <main>	
-	  <p>Welcome to your first lesson on HTML.</p>
-   </main>
+    <header>
+        <h1>Learn HTML Basics</h1>
+    </header>
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#structure">Basic Structure</a>
+        <a href="#elements">HTML Elements</a>
+        <a href="#attributes">Attributes</a>
+        <a href="#forms">Forms</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#semantics">Semantics</a>
+        <a href="#metadata">Metadata</a>
+        <a href="#html5">HTML5 Features</a>
+    </nav>
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction to HTML</h2>
+            <p>HTML stands for HyperText Markup Language. It is the standard language for creating web pages and web applications. HTML describes the structure of web pages using a variety of tags and attributes, which the browser uses to render the content.</p>
+        </section>
+
+        <section id="structure">
+            <h2>Basic Structure</h2>
+            <p>An HTML document has a fundamental structure. Here is a basic template:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;p&gt;Welcome to HTML basics.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section id="elements">
+            <h2>HTML Elements</h2>
+            <p>HTML documents are composed of various elements. Some common ones include:</p>
+            <ul>
+                <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong>: Headings, where &lt;h1&gt; is the largest and &lt;h6&gt; is the smallest.</li>
+                <li><strong>&lt;p&gt;</strong>: Paragraph element used for text content.</li>
+                <li><strong>&lt;a&gt;</strong>: Anchor element used for hyperlinks.</li>
+                <li><strong>&lt;img&gt;</strong>: Image element to embed images.</li>
+                <li><strong>&lt;ul&gt;</strong>, <strong>&lt;ol&gt;</strong>, and <strong>&lt;li&gt;</strong>: List elements for creating unordered and ordered lists.</li>
+                <li><strong>&lt;table&gt;</strong>: Table element to display tabular data.</li>
+                <li><strong>&lt;form&gt;</strong>: Form element to collect user input.</li>
+                <li><strong>&lt;div&gt;</strong> and <strong>&lt;span&gt;</strong>: Generic container elements for styling and layout.</li>
+            </ul>
+        </section>
+
+        <section id="attributes">
+            <h2>Attributes</h2>
+            <p>HTML elements can have attributes that provide additional information about the element. Common attributes include:</p>
+            <ul>
+                <li><strong>id:</strong> Specifies a unique identifier for an element.</li>
+                <li><strong>class:</strong> Assigns one or more class names to an element for styling.</li>
+                <li><strong>style:</strong> Applies inline CSS styles directly to an element.</li>
+                <li><strong>href:</strong> Used in anchor elements to specify the URL of the link.</li>
+                <li><strong>src:</strong> Specifies the path to an image or media file.</li>
+                <li><strong>alt:</strong> Provides alternative text for images.</li>
+            </ul>
+            <pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code></pre>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <p>Forms are used to collect user input. HTML provides several types of form controls:</p>
+            <ul>
+                <li><strong>&lt;input&gt;</strong>: Various types of input fields, including text, password, checkbox, radio, and more.</li>
+                <li><strong>&lt;textarea&gt;</strong>: Multi-line text input field.</li>
+                <li><strong>&lt;select&gt;</strong>: Drop-down list of options.</li>
+                <li><strong>&lt;button&gt;</strong>: A clickable button.</li>
+                <li><strong>&lt;fieldset&gt;</strong> and <strong>&lt;legend&gt;</strong>: Group related form elements and provide a caption for them.</li>
+            </ul>
+            <pre><code>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+    
+    &lt;fieldset&gt;
+        &lt;legend&gt;Gender&lt;/legend&gt;
+        &lt;label&gt;&lt;input type="radio" name="gender" value="male"&gt; Male&lt;/label&gt;
+        &lt;label&gt;&lt;input type="radio" name="gender" value="female"&gt; Female&lt;/label&gt;
+    &lt;/fieldset&gt;
+    
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <p>HTML allows you to include multimedia elements:</p>
+            <ul>
+                <li><strong>&lt;img&gt;</strong>: Embeds images in a page. Ensure to use the <code>alt</code> attribute for accessibility.</li>
+                <li><strong>&lt;audio&gt;</strong>: Embeds audio content with controls for playback.</li>
+                <li><strong>&lt;video&gt;</strong>: Embeds video content with controls for playback. Supports multiple video formats for compatibility.</li>
+            </ul>
+            <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+            <pre><code>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+            <pre><code>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+        </section>
+
+        <section id="semantics">
+            <h2>Semantic HTML</h2>
+            <p>Semantic HTML elements clearly describe their meaning in a human- and machine-readable way. Some examples include:</p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: Represents introductory content or a set of navigational links.</li>
+                <li><strong>&lt;nav&gt;</strong>: Defines a set of navigation links.</li>
+                <li><strong>&lt;article&gt;</strong>: Represents a self-contained piece of content.</li>
+                <li><strong>&lt;section&gt;</strong>: Defines a section in a document.</li>
+                <li><strong>&lt;aside&gt;</strong>: Represents content indirectly related to the surrounding content.</li>
+                <li><strong>&lt;footer&gt;</strong>: Represents the footer for a section or the entire document.</li>
+            </ul>
+            <pre><code>&lt;article&gt;
+    &lt;header&gt;&lt;h2&gt;Article Title&lt;/h2&gt;&lt;/header&gt;
+    &lt;p&gt;Content of the article.&lt;/p&gt;
+    &lt;footer&gt;&lt;p&gt;Author: Your Name&lt;/p&gt;&lt;/footer&gt;
+&lt;/article&gt;</code></pre>
+        </section>
+
+        <section id="metadata">
+            <h2>Metadata</h2>
+            <p>Metadata provides information about the document and can be included in the <code>&lt;head&gt;</code> section:</p>
+            <ul>
+                <li><strong>&lt;meta&gt;</strong>: Provides metadata like character set, viewport settings, and keywords.</li>
+                <li><strong>&lt;title&gt;</strong>: Sets the title of the document, shown in the browser tab.</li>
+                <li><strong>&lt;link&gt;</strong>: Links external resources like stylesheets.</li>
+                <li><strong>&lt;script&gt;</strong>: Embeds or links JavaScript files.</li>
+            </ul>
+            <pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta name="description" content="Learn HTML basics with examples"&gt;
+    &lt;title&gt;HTML Basics&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+        </section>
+
+        <section id="html5">
+            <h2>HTML5 Features</h2>
+            <p>HTML5 introduces new elements and APIs that enhance web development:</p>
+            <ul>
+                <li><strong>&lt;section&gt;</strong>: Defines sections in a document.</li>
+                <li><strong>&lt;article&gt;</strong>: Represents independent content.</li>
+                <li><strong>&lt;video&gt;</strong> and <strong>&lt;audio&gt;</strong>: Support for media content without plugins.</li>
+                <li><strong>&lt;canvas&gt;</strong>: Provides a space for drawing graphics on the fly via JavaScript.</li>
+                <li><strong>&lt;localStorage&gt;</strong>: Allows storage of data locally within the user's browser.</li>
+                <li><strong>&lt;form&gt;</strong>: New input types and attributes like <code>placeholder</code>, <code>required</code>, and <code>pattern</code>.</li>
+            </ul>
+            <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code></pre>
+            <pre><code>if (typeof(Storage) !== "undefined") {
+    // Code for localStorage/sessionStorage.
+} else {
+    // Sorry! No Web Storage support..
+}</code></pre>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Learn to Code Online. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
 </body>
 </html>
