@@ -1,16 +1,48 @@
-/* Reset default styles */
+/* Basic styles for the hamburger menu */
 .hamburger-menu {
-  display: none; /* Initially hidden */
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-@media (max-width: 768px) {
+
+.hamburger-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: none; /* Hide menu items initially */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-items a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-items a:hover {
+  background: #f0f0f0;
+}
+
+/* Show menu items when the menu is open */
+.hamburger-menu.open .menu-items {
+  display: block;
+}
+
+/* Responsive styling */
+@media (min-width: 769px) {
   .hamburger-menu {
-    display: block;
-  }
-  .menu-items {
-    display: none; /* Hide menu items initially */
-  }
-  .hamburger-menu button {
-    /* Styling for the hamburger button */
+    display: none; /* Hide hamburger menu on larger screens */
   }
 }
 
