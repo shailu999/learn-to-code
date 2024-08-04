@@ -1,8 +1,8 @@
 /* Basic styles for the hamburger menu */
+/* Basic styles for the hamburger menu */
 .hamburger-menu {
+  display: none; /* Default to hidden */
   position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .hamburger-button {
@@ -12,8 +12,9 @@
   cursor: pointer;
 }
 
+/* Menu items initially hidden */
 .menu-items {
-  display: none; /* Hide menu items initially */
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -34,17 +35,18 @@
   background: #f0f0f0;
 }
 
-/* Show menu items when the menu is open */
-.hamburger-menu.open .menu-items {
-  display: block;
-}
-
-/* Responsive styling */
-@media (min-width: 769px) {
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
   .hamburger-menu {
-    display: none; /* Hide hamburger menu on larger screens */
+    display: block;
+  }
+
+  /* Show menu items when 'open' class is added */
+  .menu-items.open {
+    display: block;
   }
 }
+
 
 * {
     margin: 0;
