@@ -1,4 +1,19 @@
 /* Reset default styles */
+.hamburger-menu {
+  display: none; /* Initially hidden */
+}
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+  .menu-items {
+    display: none; /* Hide menu items initially */
+  }
+  .hamburger-menu button {
+    /* Styling for the hamburger button */
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
