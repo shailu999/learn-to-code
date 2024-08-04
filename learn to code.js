@@ -1,4 +1,20 @@
 // JavaScript for interactive elements and animations
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburgerButton = document.querySelector('.hamburger-button');
+  const menuItems = document.querySelector('.menu-items');
+
+  hamburgerButton.addEventListener('click', function () {
+    // Toggle the 'open' class to show/hide the menu
+    if (menuItems.classList.contains('open')) {
+      menuItems.classList.remove('open');
+    } else {
+      menuItems.classList.add('open');
+    }
+  });
+});
+
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
     // Smooth scrolling for anchor links
